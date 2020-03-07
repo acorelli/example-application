@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cmake --build @CMAKE_BINARY_DIR@ --config Debug
+cmake --build @CMAKE_BINARY_DIR@ --config Release
+cmake --build @CMAKE_BINARY_DIR@ --config Release --target docs

@@ -1,0 +1,6 @@
+Name, Branch, Repo URL
+----, ------, --------
+doxygen, 1.8.14, path/doxygen.git
+graphviz, 1.02, path/graphviz.git
+NSIS, 3.01, path/nsis.git
+qt, 5.12.3, path/qt.git

@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "Configuring project files from existing CMakeCache..."
+echo ""
+
+if [ $# -eq 0 ];
+then
+	echo "Production Configuration"
+	PROD=1
+elif [ $1 = "DEMO" ];
+then
+	echo "Demo Configuration"
+	PROD=0
+else
+	echo "Production Configuration"
+	PROD=1
+fi
+
+echo "@CMAKE_COMMAND@ -G\"Xcode\" -DCMAKE_PREFIX_PATH=/usr/local/ -DCMAKE_INSTALL_PREFIX=./install -DQt5_DIR=@Qt5_DIR@ @CMAKE_SOURCE_DIR@"
+@CMAKE_COMMAND@ -G"Xcode" -DCMAKE_PREFIX_PATH=/usr/local/ -DCMAKE_INSTALL_PREFIX=./install -DQt5_DIR=@Qt5_DIR@ @CMAKE_SOURCE_DIR@

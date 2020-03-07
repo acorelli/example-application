@@ -1,0 +1,6 @@
+@echo OFF
+set PATH=@CMAKE_PREFIX_PATH@/NSIS;%PATH%
+@echo ON
+"@CMAKE_COMMAND@" -E env "@vs_debugger_environment@" "@CMAKE_COMMAND@" --build "@CMAKE_BINARY_DIR@" --config Debug
+"@CMAKE_COMMAND@" -E env "@vs_debugger_environment@" "@CMAKE_COMMAND@" --build "@CMAKE_BINARY_DIR@" --config Debug --target INSTALL
+"@CMAKE_CPACK_COMMAND@" -G NSIS -C Debug

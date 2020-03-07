@@ -1,0 +1,3 @@
+Default example-application Build ID
+
+This version of example-application was built manually or Jenkins has failed to replace this file with a valid build ID.

@@ -1,0 +1,5 @@
+/build
+!/build/easy_config.bat
+!/build/easy_config.sh
+!/build/build_id.txt
+.DS_Store

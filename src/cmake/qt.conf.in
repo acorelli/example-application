@@ -1,0 +1,7 @@
+[Paths]
+Prefix=@qt_prefix@/qt
+Headers = include 
+Libraries = lib
+Binaries = bin 
+Plugins = plugins 
+Imports = imports 
