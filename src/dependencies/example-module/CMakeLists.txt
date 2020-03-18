@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.11.0 ) # FetchContent introduced in 3.11.0
 
 include(FetchContent)
 FetchContent_Declare(example-module
-	GIT_REPOSITORY	git@url.to.the.repo.server:path/products/example-product-environment/example-module.git
+	GIT_REPOSITORY	git@github.com:acorelli/example-module.git
 	GIT_TAG develop
 	GIT_SHALLOW YES
 )
