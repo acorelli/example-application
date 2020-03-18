@@ -35,9 +35,9 @@ for %%G in %CMakeGeneratedFiles% do (
 :: Configure solution using default values
 echo Configuring project files...
 echo.
-echo cmake -G ^"Visual Studio 15 2017 Win64^" -DCMAKE_PREFIX_PATH="%ThirdPartyDir%" -DCMAKE_INSTALL_PREFIX="%cd%\install" "%~dp0..\src"
+echo cmake -G ^"Visual Studio 16 2019^" -A x64 -DCMAKE_PREFIX_PATH="%ThirdPartyDir%" -DCMAKE_INSTALL_PREFIX="%cd%\install" "%~dp0..\src"
 echo.
-cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_PREFIX_PATH="%ThirdPartyDir%" -DCMAKE_INSTALL_PREFIX="%cd%\install" "%~dp0..\src"
+cmake -G "Visual Studio 16 2019" -A x64 -DCMAKE_PREFIX_PATH="%ThirdPartyDir%" -DCMAKE_INSTALL_PREFIX="%cd%\install" "%~dp0..\src"
 echo.
 
 @pause
